@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+<link rel="stylesheet" href="main.css"><link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap" rel="stylesheet">
+    <title>TO-DO LIST</title>
+  </head>
+  <body>
+    <div class="jumbotron  bg-dark  text-white">
+      <div class="container">
+          <h1 class=" align">
+              <img src="/logo (1).png" alt="">TO-DO LIST
+          </h1>     
+      </div>
+      </div>
+    <div id="todopart" class="container my-4">
+      <h2 class=" text-center ">TODO's List</h2>
+       
+          <div class="form-group">
+              <input type="text" class="form-control" id="title" placeholder="Add your items here...">
+           
+          </div>
+<br>
+          <div class="form-group">
+              
+              <textarea class="form-control" id="description" placeholder="Add descripton....(optional)" rows="2"></textarea>
+              
+          </div>
+          <br>
+
+          <button   id="add" class="btn btn-primary">Add</button>
+          <!-- <button  id="clear" class="btn btn-primary" onclick="clearStorage()">Clear list</button> -->
+       
+
+      <div id="items" class="my-4">
+          <h2>Your Items</h2>
+          <table class="table" id >
+              <thead>
+                <tr>
+                  <th scope="col">SrNo</th>
+                  <th scope="col">Item Title</th>
+                  <th scope="col">Item Description</th> 
+                  <th scope="col">Actions</th> 
+                </tr>
+              </thead>
+              <tbody id="tableBody">
+                <!-- <tr>
+                  <th scope="row">1</th>
+                  <td>Get some Coffee</td>
+                  <td>You need coffee as you are a coder</td> 
+                  <td><button class="btn btn-sm btn-danger">Delete</button></td> 
+                  <td><button class="btn btn-sm btn-primary">Edit</button></td> 
+                </tr> -->
+                
+              </tbody>
+            </table>
+      </div>
+  </div>
+
+   
+
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+<script src="/todo.js"></script>
+  </body>
+</html>
