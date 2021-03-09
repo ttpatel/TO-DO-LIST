@@ -2,12 +2,12 @@ const parentList=[];
 
 
 var button=document.getElementById('add');
-button.addEventListener('click',Manenaiavadtu);
+button.addEventListener('click',todoList);
 update();
 
 // updateList()
 
-function Manenaiavadtu(){
+function todoList(){
     let tit=document.getElementById('title');
     let desc=document.getElementById('description');
 
@@ -55,7 +55,7 @@ function Clear(){
      //Parent Buttttons
      let my_buttons=document.getElementById('mybuttons')
      my_buttons.innerHTML=`
-     <button   id="add" class="btn btn-primary" onclick=Manenaiavadtu()>Add</button>
+     <button   id="add" class="btn btn-primary" onclick=todoList()>Add</button>
      `;
  
 }
