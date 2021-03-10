@@ -30,7 +30,7 @@ function editByIndex(index){
     let my_buttons=document.getElementById('mybuttons')
     my_buttons.innerHTML=`
     <button   id="add" class="btn btn-success" onclick=saveByIndex(${index})>Save Changes</button>
-    <button   id="add" class="btn btn-danger" onClick=Clear()>Cancel</button>
+    <button   id="add" class="btn btn-danger" onclick=Clear()>Cancel</button>
     `;
 
     // currentUpdatingIndex=index;
@@ -62,7 +62,7 @@ function Clear(){
 function  deleteByIndex(index){
     parentList.splice(index,1);
    
-   
+
     update();
 }
 
@@ -77,10 +77,21 @@ function update(){
             <td>${index + 1}</td>
             <td>${element.title}</td>
             <td>${element.desc}</td> 
-            <td><button class="btn btn-sm btn-danger" onclick="deleteByIndex(${index})">Delete</button></td>
+            <td><button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal" >Delete</button></td>
+ 
+       
             <td><button class="btn btn-sm btn-primary" onclick="editByIndex(${index})">Edit</button></td> 
         </tr>`;
   });
   tableBody.innerHTML = str;
 }
 
+function modal(index){
+
+    // let yesbutton = document.getElementById('modalyes');
+    parentList.splice(index,1);
+   
+
+    update();
+    
+}
